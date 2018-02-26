@@ -3,7 +3,7 @@
  *********/
 
 import React from 'react';
-
+import './game.css';
 
 export default function PriorGuesses(props) {
   return (

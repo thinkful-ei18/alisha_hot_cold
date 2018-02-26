@@ -14,7 +14,7 @@ import './game.css';
 
 export default function Game() {
   return (
-    <div>
+    <div className="game">
       <h1>HOT or COLD</h1>
       <div><Responses /></div>
       <div><PlayingField /></div>

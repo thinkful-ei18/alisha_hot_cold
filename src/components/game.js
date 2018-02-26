@@ -9,6 +9,7 @@ import React from 'react';
 import Responses from './responses';
 import PlayingField from './playingField';
 import PriorGuesses from './priorGuesses';
+import './game.css';
 
 
 export default function Game() {

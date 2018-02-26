@@ -6,6 +6,7 @@
 import React from 'react';
 import Nav from './nav';
 import Game from './game';
+import '../index.css'
 
 
 export default function Board(props) {

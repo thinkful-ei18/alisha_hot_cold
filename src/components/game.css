@@ -1,0 +1,52 @@
+/* ====== Parent Game Component ====== */
+.game {
+  margin-right: auto;
+  margin-left: auto;
+  width: 400px;
+}
+
+
+
+/* ====== Child Responses Component ====== */
+.response {
+  background-color: #CC324B;
+  color: white;
+  height: 80px;
+  width: 100%;
+}
+
+
+/* ====== Child PlayingField Component ====== */
+
+.playingField {
+  background-color: #394264;
+  width: 100%;
+  height: 240px;
+}
+
+.guess {
+  background-color: #50597B;
+}
+
+.submit {
+  background-color: #1F253D;
+}
+
+.form {
+  width:250px;
+}
+
+.guess, .submit {
+  width: 100%;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+
+
+/* ====== Child PriorGuesses Component ====== */
+.priorGuesses {
+  background-color: #11A8AB;
+  width: 100%;
+  height: 80px;
+}

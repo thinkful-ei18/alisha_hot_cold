@@ -5,5 +5,5 @@
 import React from 'react';
 
 export default function Responses() {
-  return <h1>Make Your Guess!</h1>
+  return <h4 className="response">Make Your Guess!</h4>
 }

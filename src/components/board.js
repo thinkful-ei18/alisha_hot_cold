@@ -14,7 +14,6 @@ export default function Board(props) {
     <div>
       <div><Nav /></div>
       <div><Game /></div>
-      <p>Hello World</p>
     </div>
   )
 }

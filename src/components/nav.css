@@ -1,0 +1,11 @@
+a {
+  font-size: 20px;
+  color: #FFFFFF;
+  text-decoration: none;
+}
+
+li {
+  list-style-type: none;
+  display: inline;
+  margin-right: 1150px;
+}

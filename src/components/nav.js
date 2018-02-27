@@ -5,15 +5,16 @@
 
 
 import React from 'react';
+import './nav.css'
 
 export default function Game() {
   return (
-    <ul>
+    <ul className="nav">
       <li>
-        <a href=''>What?</a>
+        <a href=''>WHAT?</a>
       </li>
       <li>
-        <a href=''>New Game+</a>
+        <a href=''>NEW GAME+</a>
       </li>
     </ul>
   )

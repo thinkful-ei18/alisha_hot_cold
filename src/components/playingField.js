@@ -15,7 +15,7 @@ export default function PlayingField() {
         <input className="guess"type="text" placeholder="enter your guess"/><br></br>
         <button className="submit"type="submit">Guess</button>
       </form>
-      <p>Guess #0!</p>
+      <p class="paragraph">Guess #0!</p>
     </div>
   )
 }

@@ -24,8 +24,8 @@ export default class Game extends Component {
     }
   }
 
-  guess(num) {
-    this.setState({guess: num})
+  guess(e) {
+    this.setState({guess: e})
   }
 
   render() {

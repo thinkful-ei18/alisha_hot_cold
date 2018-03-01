@@ -5,6 +5,7 @@
  *********/
 
 import React from 'react';
+import Guess from './Guess';
 import './game.css';
 
 
@@ -13,10 +14,7 @@ export default function PlayingField(props) {
 
   return (
     <div className="playingField">
-      <form className='form'>
-        <input className="guess" type="text" placeholder="enter your guess" onChange={(e) => props.currentGuess(e)}/><br></br>
-        <button className="submit" type="submit" onClick={e => e.preventDefault()}>Guess</button>
-      </form>
+      <Guess onChange={e => props.currentGuess(e)} />
       <p className="paragraph">Guess #0!</p>
     </div>
   )
@@ -36,5 +34,9 @@ onClick -
 onChange -
 input: target is null
 
-onChange={(e) => props.currentGuess(e)
+
+      <form className='form'>
+        <input className="guess" type="text" placeholder="enter your guess" onChange={(e) => props.currentGuess(e)}/><br></br>
+        <button className="submit" type="submit" onClick={e => e.preventDefault()}>Guess</button>
+      </form>
 */

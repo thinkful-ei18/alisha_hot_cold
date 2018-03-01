@@ -18,7 +18,7 @@ export default class Game extends Component {
     super(props);
     this.state= {
       guess: '',
-      lastGuess: '',
+      // lastGuess: '',
       allGuesses: [],
       responses: ['cold', 'warm', 'very warm', 'hot']
     }
@@ -26,15 +26,28 @@ export default class Game extends Component {
 
   guess(e) {
     this.setState({guess: e})
+    // this.updateGuessList();
+    console.log(this.state.allGuesses);
+    // console.log(this.setState({allGuesses:this.state.allGuesses.concat(this.state.guess)}));
   }
+
+  updateGuessList() {
+    const lastGuess = this.state.guess;
+    this.setState({allGuesses: this.state.allGuesses.concat(lastGuess)})
+  }
+
+
 
   render() {
     return (
       <div className="game">
         <h1>HOT or COLD</h1>
+
         <div><Responses /></div>
-        <div><PlayingField currentGuess={(e) => this.guess(e.target.value)} /></div>
-        <div><PriorGuesses /></div>
+
+        <div><PlayingField currentGuess={(e) => this.guess(e.target.value)} updateGuessList={()=> this.updateGuessList()}/></div>
+
+        <div><PriorGuesses updateGuessList={this.state.allGuesses}/></div>
       </div>
     )
   } 

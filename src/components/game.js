@@ -24,15 +24,18 @@ export default class Game extends Component {
     }
   }
 
+  guess(num) {
+    this.setState({guess: num})
+  }
+
   render() {
     return (
       <div className="game">
         <h1>HOT or COLD</h1>
         <div><Responses /></div>
-        <div><PlayingField /></div>
+        <div><PlayingField currentGuess={(e) => this.guess(e.target.value)} /></div>
         <div><PriorGuesses /></div>
       </div>
     )
-  }
-  
+  } 
 }
